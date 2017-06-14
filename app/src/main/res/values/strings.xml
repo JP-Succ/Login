@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="titulo_login">Inicio de sesión</string>
+    <string name="hint_user">Nombre de usuario</string>
+    <string name="hint_user_pass">Contraseña</string>
+    <string name="btn_login">Ingresar</string>
+    <string name="titulo_logueado">Detalle de Usuario</string>
+    <string name="titulo_bienvenida">Bienvenido</string>
+    <string name="hint_telefono">Ingrese un telefono</string>
+    <string name="btn_llamar">Marcar</string>
+    <string name="btn_finalizar">Finalizar</string>
+</resources>

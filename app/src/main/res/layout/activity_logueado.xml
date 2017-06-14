@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.juanpablo.login.Logueado">
+
+    <TextView
+        android:id="@+id/txtBienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_bienvenida"
+        android:textColor="@color/colorTipografia"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/btnMarcar"
+        android:layout_alignStart="@+id/btnMarcar"
+        android:layout_marginTop="74dp" />
+
+    <EditText
+        android:id="@+id/txtTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnMarcar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="@string/hint_telefono"
+        android:inputType="phone"
+        android:textColorHint="@color/colorTipografia"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="218dp" />
+
+    <Button
+        android:id="@+id/btnMarcar"
+        android:layout_width="226dp"
+        android:layout_height="47dp"
+        android:backgroundTint="@color/colorTipografia"
+        android:text="@string/btn_llamar"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="280dp"
+        android:layout_above="@+id/btnFinalizar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="145dp" />
+
+    <Button
+        android:id="@+id/btnFinalizar"
+        android:layout_width="378dp"
+        android:layout_height="61dp"
+        android:text="@string/btn_finalizar"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="448dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
