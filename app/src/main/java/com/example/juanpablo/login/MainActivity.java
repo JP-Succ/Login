@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
                     intent.putExtra("KEY_USER", user);
                     intent.putExtra("KEY_PASS", pass);
                     //iniciar intent con metodo startActivity
+                    txtUser.setText("");
+                    txtPass.setText("");
                     startActivity(intent);
                 } else {
                     Toast.makeText(MainActivity.this, "Los datos ingresados son incorrectos", Toast.LENGTH_LONG).show();
@@ -55,35 +57,3 @@ public class MainActivity extends AppCompatActivity {
     }
 
     }
-
-/*
-    @Override
-    public void onClick(View v) {
-
-        switch (v.getId()){
-
-            case R.id.btnIngresar:
-                //invocar segunda activity
-                Intent intent = new Intent(this, Logueado.class);
-                //obtengo el usuario, contraseña y lo convierto a cadena
-                String user = txtUser.getText().toString();
-                String pass = txtPass.getText().toString();
-                if(validarLogin(user,pass)){
-                    //mandamos parametros
-                    intent.putExtra("KEY_USER",user);
-                    intent.putExtra("KEY_PASS",pass);
-                    //iniciar intent con metodo startActivity
-                    startActivity(intent);
-                }
-                else{
-                    Toast.makeText(this, "Los datos ingresados son incorrectos", Toast.LENGTH_LONG).show();
-                    txtUser.setText("");
-                    txtPass.setText("");
-                }
-
-                break;
-
-        }
-
-    }*/
-
